@@ -717,28 +717,36 @@
               placeholder="Text input"
             ></textarea>
           </label>
-          <div class="checkbox-wrapper">
-            <input
-              id="checkbox"
-              type="checkbox"
-              name="user_policy-check"
-              class="modal-policy-check is-hidden"
-            /><label for="checkbox" class="policy-check"
+          <input
+            type="checkbox"
+            name="user_policy-check"
+            class="modal-policy-check is-hidden"
+            id="checkbox-input"
+          />
+          <label for="checkbox-input" class="policy-check"
+            ><span class="checkbox-icon">
+              <svg class="icon-property" width="16" height="16">
+                <use
+                  href="./images/symbol-defs4.svg#icon-Property_click"
+                ></use></svg></span
+            ><span
               >&nbsp;I accept the terms and conditions of the&nbsp;<a href=""
                 >Privacy Policy</a
-              ></label
-            >
-            <span class="checkbox-icon">
-              <svg class="icon-property" width="15" height="15">
-                <use href="./images/symbol-defs4.svg#icon-Property_click"></use>
-              </svg>
-            </span>
-          </div>
+              ></span
+            ></label
+          >
+
           <button type="submit" class="modal-btn contact-form-btn">Send</button>
         </form>
       </div>
     </div>
-
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

@@ -770,6 +770,9 @@ img {
   fill: var(--color-link);
 }
 .policy-check {
+  width: 360px;
+  height: 56px;
+  margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -780,41 +783,28 @@ img {
   color: var(--color-border-customers);
   position: relative;
 }
-/* .policy-check::before { */
-/* display: block;
-  width: 16px;
-  height: 16px;
-  border-radius: 4px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  content: "";
-  cursor: pointer;
-}
-.modal-policy-check:focus + .policy-check::before {
-  outline: 2px solid rgba(0, 0, 255, 0.5); */
-
-.checkbox-wrapper {
-  width: 360px;
-  height: 56px;
-  margin: 0;
-}
-.icon-property {
-  fill: currentColor;
-  cursor: pointer;
-  transition: fill var(--transition-time);
-}
-
-.checkbox-icon {
+.modal-policy-check {
+  outline: none;
   position: absolute;
   top: 0px;
+  left: 0px;
+  cursor: pointer;
+}
+
+.icon-property {
+  fill: currentColor;
+}
+.checkbox-icon {
+  position: absolute;
+  top: 16px;
   left: 0;
   display: inline-block;
   width: 16px;
   height: 16px;
   border-radius: 4px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  color: transparent;
   background-color: var(--color-modal);
-  transition: background-color, color var(--transition-time);
+  color: transparent;
+  transition: background-color var(--transition-time);
 }
 .modal-policy-check:checked + .policy-check > .checkbox-icon {
   background-color: var(--color-link);
