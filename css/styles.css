@@ -104,7 +104,18 @@ img {
 .modal-btn:focus {
   background-color: var(--color-link);
 }
-
+.title-h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--secondary-color-text);
+  margin-bottom: 72px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
 .title-h3 {
   font-weight: 500;
   font-size: 20px;
@@ -344,16 +355,7 @@ img {
   padding-bottom: 96px;
 }
 .title-h2 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: var(--secondary-color-text);
-
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+  margin-bottom: 0;
 }
 
 .advantages-list {
@@ -431,7 +433,183 @@ img {
 .social-link-list:focus {
   background-color: var(--color-link);
 }
+.title-h2 {
+  margin-bottom: 72px;
+}
 
+.customers-item {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc((100% - 16px) / 2);
+  margin-top: -72px;
+  margin-left: -16px;
+
+  justify-content: center;
+}
+.customers-item > .our-customers {
+  display: block;
+  margin-top: 72px;
+  margin-left: 16px;
+
+  width: 190px;
+  height: 88px;
+}
+.link-customers {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--color-border-customers);
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  transition: border-color var(--transition-time);
+}
+.customers-icon {
+  fill: var(--color-customer-logo);
+  transition: fill var(--transition-time);
+}
+.link-customers:hover,
+.link-customers:focus {
+  border-color: var(--color-link);
+}
+.link-customers:hover .customers-icon,
+.link-customers:focus .customers-icon {
+  fill: var(--color-link);
+}
+.footer {
+  margin: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: var(--secondary-color-text);
+}
+.footer-container {
+  display: block;
+  text-align: center;
+  justify-content: center;
+}
+.footer-text {
+  max-width: 268px;
+  margin-top: 18px;
+  margin-bottom: 72px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+.text-footer-link {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-family: var(--primary-font);
+  font-style: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--theme-dark-color-text);
+}
+.social-link-inner {
+  max-width: 208px;
+  height: 80px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social-list-footer {
+  display: flex;
+  gap: 16px;
+  flex-wrap: nowrap;
+}
+.social-list-item-footer {
+  width: 40px;
+  height: 40px;
+  color: var(--color-background-btn-other);
+}
+
+.social-link-list-ftr {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--primary-color-text);
+  align-items: center;
+  justify-content: center;
+  transition: background-color var(--transition-time);
+}
+
+.social-link-list-ftr:hover,
+.social-link-list-ftr:focus {
+  background-color: var(--accent-footer-social-link);
+}
+.form-for-subscribe {
+  display: block;
+  margin-top: 72px;
+  text-align: center;
+}
+.subscribe-form-input {
+  width: 398px;
+  height: 40px;
+  background-color: var(--secondary-color-text);
+  border: 1px solid var(--theme-dark-color-text);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  margin-top: 16px;
+  padding-left: 16px;
+  outline: none;
+  font-family: var(--primary-font);
+  font-style: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--theme-dark-color-text);
+  transition: border-color var(--transition-time);
+}
+.subscribe-form-input:focus {
+  border-color: var(--color-link);
+}
+.subscribe-form-input::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(24 / 12);
+  letter-spacing: 0.04em;
+  color: var(--theme-dark-color-text);
+  top: 18px;
+}
+.btn-subscribe-text {
+  font-family: var(--primary-font);
+  font-style: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--theme-dark-color-text);
+}
+.subscribe-icon {
+  margin-left: 16px;
+}
+.subscribe-form-btn {
+  width: 165px;
+  height: 40px;
+  margin-top: 16px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: var(--color-WEB-background-btn);
+  border-radius: 4px;
+  border: none;
+  padding: 8px 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--theme-dark-color-text);
+  transition: background-color var(--transition-time);
+}
+.subscribe-form-btn:hover,
+.subscribe-form-btn:focus {
+  background-color: var(--color-link);
+}
 @media screen and (min-width: 768px) {
   .mobil-menu {
     display: none;
@@ -538,6 +716,7 @@ img {
   .advantages-h3 {
     text-align: left;
   }
+
   .our-team-item {
     display: flex;
     align-items: center;
@@ -545,7 +724,7 @@ img {
     text-align: center;
     flex-wrap: wrap;
   }
-  .title-h2-tablet {
+  .title-h2 {
     margin-bottom: 72px;
   }
   .team-item {
@@ -553,7 +732,7 @@ img {
   }
   .card-set-tablet {
     margin: 0;
-    padding: 0 0 120px;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
     flex-basis: calc((100% - 24px) / 2);
@@ -566,6 +745,67 @@ img {
     margin-left: 24px;
     width: 264px;
     height: 428px;
+  }
+  .customers-item {
+    flex-basis: calc((100% - 24px) / 3);
+    margin-left: -24px;
+    justify-content: center;
+  }
+  .customers-item > .our-customers {
+    margin-left: 24px;
+    width: 168px;
+  }
+
+  .footer-container {
+    text-align: start;
+  }
+  .footer-parth {
+    display: flex;
+    gap: 24px;
+  }
+  .footer-text {
+    max-width: 264px;
+    margin-top: 18px;
+    margin-bottom: 72px;
+  }
+
+  .social-link-inner {
+    margin-left: 0;
+  }
+
+  .form-for-subscribe {
+    display: flex;
+    margin-top: 0;
+    justify-content: left;
+    width: 453px;
+    height: 80px;
+  }
+
+  .subscribe-form-input {
+    width: 264px;
+
+    margin-left: 0;
+    padding-left: 16px;
+    outline: none;
+    font-family: var(--primary-font);
+    font-style: 500;
+  }
+
+  .btn-subscribe-text {
+    font-family: var(--primary-font);
+    font-style: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--theme-dark-color-text);
+  }
+  .subscribe-form {
+    text-align: left;
+  }
+  .subscribe-form-btn {
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: 24px;
   }
   @media screen and (min-width: 480px) {
     .hero {
@@ -661,6 +901,73 @@ img {
   .title-h2 {
     margin-bottom: 72px;
   }
+  .footer {
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: var(--secondary-color-text);
+  }
+  .footer-container {
+    display: flex;
+    gap: 80px;
+  }
+  .footer-text {
+    max-width: 264px;
+    margin-top: 18px;
+    margin-bottom: 0;
+    text-align: left;
+  }
+  .text-footer-link {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-family: var(--primary-font);
+    font-style: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--theme-dark-color-text);
+  }
+  .social-link-inner {
+    max-width: 208px;
+    height: 80px;
+    justify-content: left;
+  }
+  .footer-parth {
+    gap: 120px;
+  }
+  .social-list-footer {
+    display: flex;
+    gap: 16px;
+    flex-wrap: nowrap;
+  }
+  .social-list-item-footer {
+    width: 40px;
+    height: 40px;
+    color: var(--color-background-btn-other);
+  }
+
+  .social-link-list-ftr {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--primary-color-text);
+    align-items: center;
+    justify-content: center;
+    transition: background-color var(--transition-time);
+  }
+
+  .social-link-list-ftr:hover,
+  .social-link-list-ftr:focus {
+    background-color: var(--accent-footer-social-link);
+  }
+  .form-for-subscribe {
+    display: flex;
+  }
+  .subscribe-form {
+    text-align: left;
+  }
+
   @media screen and (min-width: 768px) {
     .hero {
       background-image: linear-gradient(
