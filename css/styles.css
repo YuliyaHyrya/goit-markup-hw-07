@@ -249,7 +249,7 @@ img {
 
 .social-list-mob {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   gap: 24px;
   align-items: center;
 }
@@ -303,7 +303,6 @@ img {
   align-items: start;
   margin-top: 236px;
   padding-bottom: 48px;
-  flex-wrap: nowrap;
 }
 
 /* hero */
