@@ -377,7 +377,6 @@ img {
   margin-bottom: 0;
 }
 .team {
-  /* margin: auto; */
   background: var(--color-background-btn-other);
 }
 
@@ -539,7 +538,35 @@ img {
   .advantages-h3 {
     text-align: left;
   }
-
+  .our-team-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  .title-h2-tablet {
+    margin-bottom: 72px;
+  }
+  .team-item {
+    margin: 0;
+  }
+  .card-set-tablet {
+    margin: 0;
+    padding: 0 0 120px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 24px) / 2);
+    margin-top: -64px;
+    margin-left: -24px;
+  }
+  .card-set-tablet > .team-item {
+    display: block;
+    margin-top: 64px;
+    margin-left: 24px;
+    width: 264px;
+    height: 428px;
+  }
   @media screen and (min-width: 480px) {
     .hero {
       background-image: linear-gradient(
